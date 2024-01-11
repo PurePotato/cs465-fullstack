@@ -1,12 +1,11 @@
-var fs = require('fs');
-var trips = JSON.parse(fs.readFileSync('./data/trips.json',
-'utf8'));
+var fs = require("fs");
+var contactsD = JSON.parse(fs.readFileSync("./data/contact.json", "utf8"));
 
 /*GET travel view */
-const travel = (req, res) => {
-    res.render('travel', {title: 'Travlr Getaways', trips})
+const contact = (req, res) => {
+  res.render("contact", { title: "Travlr Getaways", contactsD });
 };
 
 module.exports = {
-    travel
+  contact,
 };
