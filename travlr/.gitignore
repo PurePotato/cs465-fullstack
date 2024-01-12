@@ -60,7 +60,6 @@ typings/
 # next.js build output
 .next
 
-# copied from CS 465 Full Stack Guide per instructions
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
