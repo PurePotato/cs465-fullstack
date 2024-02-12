@@ -15,21 +15,21 @@
 				<div class="box">
 					<div>
 						<div class="body">
-							<h3>Latest News</h3>
+							<h3>{{newsData[0].latestNews.title}}</h3>
 							<ul>
-			{{#each latestNews.items}}
+							{{#each newsData[0].latestNews.items}}
 								<li>
-									<a href="/news">{{text}}</a>
+									<a href="/news">{{this.text}}</a>
 								</li>
-			{{/each}}					
+							{{/each}}					
 							</ul>
-							<h3>Vaction Tips</h3>
+							<h3>{{newsData[0].vacationTips.title}}</h3>
 								<ul>
-			{{#each vacationTips.items}}						
+							{{#each newsData[0].vacationTips.items}}						
 									<li>
-										<a href="/news">{{text}}</a>
+										<a href="/news">{{this.text}}</a>
 									</li>
-			{{/each}}						
+							{{/each}}						
 								</ul>
 						</div>
 					</div>
