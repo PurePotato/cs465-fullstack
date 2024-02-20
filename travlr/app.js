@@ -5,6 +5,7 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var hbs = require('hbs')
 require('./app_api/models/db');
+require('./app_api/models/db');
 
 var indexRouter = require("./app_server/routes/index");
 var travelRouter = require("./app_server/routes/travel");
